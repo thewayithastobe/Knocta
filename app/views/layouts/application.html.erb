@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Knocta</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "styles", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
-
+    <div class="bg">
+        <!--start container-->
+        <div id="container">
+            <!--start header-->
+            <header>
+                <!--start logo-->
+                <!--<a href="#" id="logo"><img src="images/logo.png" width="180" height="43" alt="logo"/></a>-->
+                <h1>Knocta</h1>
+                <!--end logo-->
+                <!--start menu-->
+                <nav>
+                    <ul>
+                        <li><a href="#" class="current">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--end menu-->
+                <!--end header-->
+            </header>
+            <!--start intro-->
+            <section id="intro">
+                <hgroup>
+                    <h1>"Simplicity is the ultimate sophistication"<span>- Leonardo da Vinci</span></h1>
+                    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin.
+                        Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</h2>
+                </hgroup>
+            </section>
+            <!--end intro-->
+            <!--start holder-->
+            <div class="holder_content">
+                <section class="group4">
+                    <h3>Latest article</h3>
+                    <article>
 <%= yield %>
-
+                    </article>
+                </section>
+            </div>
+            <!--end holder-->
+        </div>
+            <!--end container-->
+            <!--start footer-->
+            <footer>
+                <div class="container">
+                    <div id="FooterTwo">Knocta </div>
+                    <div id="FooterTree"> Knocta Knocta Knocta </div>
+                </div>
+            </footer>
+            <!--end footer-->
+        </div>
+        <!--end bg-->
+        <!-- Free template distributed by http://freehtml5templates.com -->
 </body>
 </html>

@@ -331,7 +331,7 @@ nav ul li a {
 }
 
 nav ul li a: hover {
-	color: #CC3333;
+	color: maroon;
 }
 
 nav ul li a.current {
