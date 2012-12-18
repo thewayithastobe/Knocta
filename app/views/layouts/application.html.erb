@@ -22,16 +22,7 @@
                 <h1>Knocta</h1>
                 <!--end logo-->
                 <!--start menu-->
-                <nav>
-                    <ul>
-                        <li><%= link_to_unless_current "Home", page_home_path %></li>
-                        <li><%= link_to_unless_current "About", page_about_path %></li>
-                        <li><%= link_to_unless_current "Articles", page_articles_path %></li>
-                        <li><%= link_to_unless_current "Blog", page_blog_path %></li>
-                        <li><%= link_to_unless_current "Contact", page_contact_path %></li>
-                        <li><%= link_to_unless_current "Log in!!!", page_log_in_path %></li>
-                    </ul>
-                </nav>
+                <%= render :partial => 'shared/navigation' %>
                 <!--end menu-->
                 <!--end header-->
             </header>
@@ -57,14 +48,7 @@
         </div>
             <!--end container-->
             <!--start footer-->
-            <footer>
-                <div class="container">
-                    <div id="FooterTwo">Knocta </div>
-                    <div id="FooterTree"> Knocta Knocta Knocta </div>
-                </div>
-            </footer>
-            <!--end footer-->
-        </div>
+            <%= render :partial => 'shared/footer' %></div>
         <!--end bg-->
         <!-- Free template distributed by http://freehtml5templates.com -->
 </body>
