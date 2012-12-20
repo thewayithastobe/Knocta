@@ -1,5 +1,9 @@
 class PageController < ApplicationController
   def home
+
+    @year = params[:year]
+    @month = params[:month]
+
   end
 
   def about
